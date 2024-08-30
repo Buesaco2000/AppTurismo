@@ -1,4 +1,4 @@
-package com.example.appturismo.InicioSesion
+package com.example.appturismo
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,14 +7,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.appturismo.R
-import com.example.appturismo.menu.MenuInicioActivity
 
-class LoginActivity : AppCompatActivity() {
+class SplahsScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_splahs_screen)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -25,10 +23,8 @@ class LoginActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             // Crear un Intent para ir de MainActivity a SecondActivity
-            val intent = Intent(this, MenuInicioActivity::class.java)
+            val intent = Intent(this, InicioActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 }

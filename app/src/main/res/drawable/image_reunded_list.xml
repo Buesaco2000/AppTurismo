@@ -1,0 +1,5 @@
+<!-- res/drawable/rounded_image_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /> <!-- Fondo transparente para solo redondear la imagen -->
+    <corners android:radius="100dp"/> <!-- Radio de las esquinas redondeadas -->
+</shape>

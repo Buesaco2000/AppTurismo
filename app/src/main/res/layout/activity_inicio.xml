@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioActivity">
+
+
+    <FrameLayout
+        android:id="@+id/layout_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/gradient_image" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="363dp"
+        android:layout_height="73dp"
+        android:text="PopayánDescubre: \nTu Aventura, Tu Guía"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="31dp"
+        android:layout_marginStart="33dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_imageView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="267dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner2"
+            android:layout_gravity="start"
+            />
+
+        <Button
+            android:id="@+id/button_Login"
+            android:layout_width="326dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="114dp"
+            android:textSize="18sp"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/gmail"
+            android:backgroundTint="@color/fourd"
+            android:layout_gravity="top|center" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="326dp"
+            android:layout_height="70dp"
+            android:textSize="18sp"
+            android:text="Ingresa con Facebook"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/facebook"
+            android:backgroundTint="@color/fourd"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="206dp"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="326dp"
+            android:layout_height="70dp"
+            android:textSize="18sp"
+            android:text="Ingresa con Google"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/google"
+            android:backgroundTint="@color/fourd"
+            android:layout_marginTop="298dp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="top|center"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Crear Cuenta"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="70dp"
+            android:textColor="@color/first"
+            android:layout_gravity="bottom|center"/>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

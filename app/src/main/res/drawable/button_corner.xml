@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/first"/>  <!-- Aplica el color definido -->
+    <corners
+        android:topLeftRadius="0dp"
+        android:topRightRadius="350dp"
+        android:bottomRightRadius="350dp"
+        android:bottomLeftRadius="350dp"/>
+</shape>

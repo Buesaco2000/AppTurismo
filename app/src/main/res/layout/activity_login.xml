@@ -71,7 +71,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/sesion"
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="580dp"
         android:layout_marginTop="78dp"
         android:orientation="vertical"
         android:paddingStart="32dp"
@@ -198,6 +198,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:backgroundTint="@color/first"

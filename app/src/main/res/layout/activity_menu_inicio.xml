@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".menu.MenuInicioActivity">
+
+    <FrameLayout
+        android:id="@+id/vector"
+        android:layout_width="40.5dp"
+        android:layout_height="11.5dp"
+        android:layout_marginStart="17.5dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/linea" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="25dp"
+            android:layout_height="4dp"
+            android:background="@drawable/linea"
+            android:layout_gravity="start|bottom"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/perfil"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="77dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vector">
+
+        <TextView
+            android:id="@+id/explorar"
+            android:layout_width="226dp"
+            android:layout_height="50dp"
+            android:text="Explorar"
+            android:textSize="32sp"
+            android:layout_gravity="start|center"
+            style="bold"
+            android:textColor="@color/black"
+            android:gravity="top"
+            />
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="17.5dp"
+            android:background="@drawable/corner_3">
+
+            <ImageButton
+                android:id="@+id/logo"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="12dp"
+                android:elevation="4dp"
+                android:layout_gravity="center|end"
+                android:src="@drawable/usuari0"
+                android:background="@drawable/reunded_images"
+                android:scaleType="centerCrop"
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/listaprincipal"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/perfil"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/ivImage"
+            android:layout_width="92dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top"
+            android:background="@drawable/reunded_images"
+            android:src="@drawable/parque"
+            android:clipToOutline="true"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="Parque Caldas"
+            android:layout_gravity="bottom"
+            />
+
+        <ImageButton
+            android:id="@+id/ivImage2"
+            android:layout_width="92dp"
+            android:layout_height="80dp"
+            android:src="@drawable/puente"
+            android:background="@drawable/reunded_images"
+            android:layout_gravity="center|top"
+            android:clipToOutline="true"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:id="@+id/tvName2"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="Puente Humilladero"
+            android:layout_gravity="center|bottom" />
+
+
+
+        <ImageButton
+            android:id="@+id/ivImage3"
+            android:layout_width="92dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pueblito"
+            android:background="@drawable/reunded_images"
+            android:scaleType="centerCrop"
+            android:layout_gravity="end|top"
+            android:clipToOutline="true"
+            android:contentDescription="@null"
+            />
+
+        <TextView
+            android:id="@+id/tvName3"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="Parque Caldas"
+            android:layout_gravity="end|bottom"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/listaprincipal"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/recycler"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
