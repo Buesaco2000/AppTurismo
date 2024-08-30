@@ -46,9 +46,13 @@
                 android:layout_height="60dp"
                 android:layout_gravity="end|center_vertical"
                 android:layout_marginEnd="25dp"
+<<<<<<< HEAD
                 android:src="@drawable/star">
 
             </ImageView>
+=======
+                android:src="@drawable/star"></ImageView>
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
         </FrameLayout>
 
     </LinearLayout>
@@ -71,7 +75,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/sesion"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="580dp"
+=======
+        android:layout_height="660dp"
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
         android:layout_marginTop="78dp"
         android:orientation="vertical"
         android:paddingStart="32dp"
@@ -101,7 +109,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
                 android:drawableEnd="@drawable/gmail"
+=======
+                android:drawableEnd="@drawable/email"
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
                 android:hint="Miemail@ejemplo.com"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
@@ -198,7 +210,10 @@
         </LinearLayout>
 
         <Button
+<<<<<<< HEAD
             android:id="@+id/button"
+=======
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:backgroundTint="@color/first"

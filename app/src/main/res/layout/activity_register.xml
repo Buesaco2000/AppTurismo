@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".InicioSesion.RegisterActivity">
 
+<<<<<<< HEAD
     <androidx.cardview.widget.CardView
         android:id="@+id/card_button"
         android:layout_width="64dp"
@@ -261,5 +262,15 @@
             android:background="@drawable/linea" />
 
     </FrameLayout>
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
 
 </androidx.constraintlayout.widget.ConstraintLayout>
