@@ -7,51 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".InicioSesion.RegisterActivity">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_button"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="73dp"
-        android:backgroundTint="@color/transparent"
-        android:elevation="4dp"
-        android:translationZ="8dp"
-        app:cardCornerRadius="32dp"
+    <ImageView
+        android:id="@+id/btnAtras"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/transparent">
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/transparent"
-                android:elevation="4dp"
-                android:focusable="true"
-                android:translationZ="8dp"
-                app:cardCornerRadius="28dp"
-                app:strokeWidth="0dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/first"
-                    android:padding="12dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/arrow_back">
-
-                    </ImageView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </com.google.android.material.card.MaterialCardView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </ImageView>
 
     <TextView
         android:id="@+id/text_title"
@@ -226,7 +192,7 @@
             android:id="@+id/politica"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="100dp"
             android:gravity="center"
             android:text="@string/politica_text"
             android:textColor="@color/black"
@@ -242,15 +208,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sesion2">
-
-        <View
-            android:id="@+id/rectangle_5"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:background="@color/white"
-            app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <View
             android:id="@+id/line_2"
@@ -261,5 +220,6 @@
             android:background="@drawable/linea" />
 
     </FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

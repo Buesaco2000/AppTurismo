@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="915dp"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/imagedegradado" />
     </LinearLayout>
@@ -38,32 +38,31 @@
             android:text="¿ESTÁS LISTO?"
             android:textColor="@color/white"
             android:textSize="34sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/text2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="64dp"
             android:text="Planea tu viaje y disfruta del paisaje."
             android:textColor="@color/white"
             android:textSize="28sp"
-            android:textStyle="normal"
-            android:layout_marginTop="64dp"
-            />
+            android:textStyle="normal" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="168dp"
             android:layout_height="58dp"
-            android:text="!Vamos¡"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/first"
+            android:layout_gravity="end|bottom"
             android:background="@drawable/button_corner"
+            android:backgroundTint="@color/first"
             android:gravity="center_vertical|center_horizontal"
-            android:layout_gravity="end|bottom" />
-      
+            android:text="!Vamos¡"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
     </FrameLayout>
 
 

@@ -2,8 +2,8 @@
     <solid android:color="@color/first"/> <!-- Usa el color que prefieras -->
     <corners
         android:topLeftRadius="0dp"
-        android:topRightRadius="300dp"
         android:bottomRightRadius="300dp"
+        android:topRightRadius="350dp"
         android:bottomLeftRadius="0dp"/>
 </shape>
 

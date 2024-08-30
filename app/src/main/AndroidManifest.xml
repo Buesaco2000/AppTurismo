@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,32 +15,55 @@
         android:theme="@style/Theme.AppTurismo"
         tools:targetApi="31">
         <activity
-            android:name=".InicioActivity"
+            android:name=".menu.OpcionesMenu.MapaMenuActivity"
             android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.Perfil.AyudaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.Perfil.ConfiguracionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.Perfil.SeguridadProteccionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.Perfil.HistorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.Perfil.AccesibilidadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.BuscarMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.LugaresMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.OpcionesMenu.Perfil.PerfilMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InicioActivity"
+            android:exported="true" />
         <activity
             android:name=".SplahsScreenActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".menu.MenuInicioActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".InicioSesion.LoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".InicioSesion.RegisterActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
