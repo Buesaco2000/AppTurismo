@@ -7,7 +7,7 @@
 
         <FrameLayout
             android:id="@+id/frameLayout"
-            android:layout_width="395dp"
+            android:layout_width="381dp"
             android:layout_height="192dp"
             android:background="@color/fourd"
             android:foregroundGravity="top|center"
