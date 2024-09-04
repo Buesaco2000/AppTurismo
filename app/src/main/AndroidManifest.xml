@@ -15,7 +15,12 @@
         android:theme="@style/Theme.AppTurismo"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".menu.OpcionesMenu.MapaMenuActivity"
+=======
+<<<<<<< HEAD
+            android:name=".InicioActivity"
+>>>>>>> origin/master
             android:exported="false" />
         <activity
             android:name=".menu.OpcionesMenu.Perfil.AyudaActivity"
@@ -46,6 +51,12 @@
             android:exported="true" />
         <activity
             android:name=".SplahsScreenActivity"
+<<<<<<< HEAD
+=======
+=======
+            android:name=".InicioSesion.LoginActivity"
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
+>>>>>>> origin/master
             android:exported="true">
 
             <intent-filter>
@@ -53,6 +64,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+<<<<<<< HEAD
+=======
+        </activity>
+        <activity
+<<<<<<< HEAD
+            android:name=".menu.MenuInicioActivity"
+            android:exported="true">
+>>>>>>> origin/master
 
         </activity>
         <activity
@@ -63,7 +82,17 @@
             android:exported="true" />
         <activity
             android:name=".InicioSesion.RegisterActivity"
+<<<<<<< HEAD
             android:exported="true" />
+=======
+            android:exported="true">
+
+=======
+            android:name=".InicioSesion.RegisterActivity"
+            android:exported="true">
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
+        </activity>
+>>>>>>> origin/master
     </application>
 
 </manifest>

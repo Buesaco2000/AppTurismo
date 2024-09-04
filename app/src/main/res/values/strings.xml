@@ -3,8 +3,19 @@
     <string name="inicio">Inicio de Sesión</string>
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+>>>>>>> origin/master
     <string name="politica_text">
     Al crear una cuenta aceptas nuestras <u><font color="#6C00FD">Políticas y Privacidad</font></u>
     </string>
 </resources>
+<<<<<<< HEAD
 
+=======
+=======
+</resources>
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
+>>>>>>> origin/master

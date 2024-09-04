@@ -6,7 +6,16 @@
     <color name="first">#6C00FD</color>
     <color name="second">#CCB7F8</color>
     <color name="transparent">#00CCB7F8</color>
+<<<<<<< HEAD
     <color name="third">#858585</color>D9D9D9
     <color name="fourd">#D9D9D9</color>
+=======
+<<<<<<< HEAD
+    <color name="third">#858585</color>D9D9D9
+    <color name="fourd">#D9D9D9</color>
+=======
+    <color name="third">#858585</color>
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
+>>>>>>> origin/master
 
 </resources>

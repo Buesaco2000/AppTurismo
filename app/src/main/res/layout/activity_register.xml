@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".InicioSesion.RegisterActivity">
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/btnAtras"
         android:layout_width="32dp"
@@ -14,6 +15,19 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="67dp"
         android:src="@drawable/arrow_back"
+=======
+<<<<<<< HEAD
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="73dp"
+        android:backgroundTint="@color/transparent"
+        android:elevation="4dp"
+        android:translationZ="8dp"
+        app:cardCornerRadius="32dp"
+>>>>>>> origin/master
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -220,6 +234,19 @@
             android:background="@drawable/linea" />
 
     </FrameLayout>
+<<<<<<< HEAD
 
+=======
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
+>>>>>>> origin/master
 
 </androidx.constraintlayout.widget.ConstraintLayout>
