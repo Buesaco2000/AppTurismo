@@ -17,6 +17,8 @@ import com.example.appturismo.menu.OpcionesMenu.LugaresMenuActivity
 import com.example.appturismo.menu.OpcionesMenu.MapaMenuActivity
 import com.example.appturismo.menu.OpcionesMenu.Perfil.PerfilMenuActivity
 import com.example.appturismo.menu.Provider.ListEventosProvider
+import com.example.appturismo.menu.Provider.ListLugaresProvider
+import com.example.appturismo.menu.adapter.ListLugaresViewAdapter
 
 class MenuInicioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +31,7 @@ class MenuInicioActivity : AppCompatActivity() {
             insets
         }
         initRecyclerView()
+        initRecyclerView2()
 
         val btnPerfil = findViewById<LinearLayout>(R.id.btnPerfil)
         val btnLugares = findViewById<LinearLayout>(R.id.btnLugares)
@@ -60,5 +63,13 @@ class MenuInicioActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerListView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = ListEventosViewAdapter(ListEventosProvider.eventosList)
+    }
+
+    private fun initRecyclerView2() {
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerListLugaresView)
+        recyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.adapter =
+            ListLugaresViewAdapter(ListLugaresProvider.lugaresList)
     }
 }

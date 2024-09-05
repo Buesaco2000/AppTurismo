@@ -7,161 +7,166 @@
     android:layout_height="match_parent"
     tools:context=".menu.OpcionesMenu.BuscarMenuActivity">
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="23dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginTop="63dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="23dp"
+            android:orientation="vertical">
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="63dp"
+                android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/btnAtras"
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
-                    android:backgroundTint="@color/transparent"
-                    android:background="@drawable/corner_3"
-                    android:src="@drawable/arrow_back" />
-            </FrameLayout>
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
 
-            <FrameLayout
-                android:id="@+id/vector"
-                android:layout_width="40.5dp"
-                android:layout_height="11.5dp"
-                android:layout_gravity="end|center">
+                    <ImageButton
+                        android:id="@+id/btnAtras"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:background="@drawable/corner_3"
+                        android:backgroundTint="@color/transparent"
+                        android:src="@drawable/arrow_back" />
+                </FrameLayout>
 
-                <View
-                    android:id="@+id/line_1"
+                <FrameLayout
+                    android:id="@+id/vector"
                     android:layout_width="40.5dp"
-                    android:layout_height="4dp"
-                    android:background="@drawable/linea" />
+                    android:layout_height="11.5dp"
+                    android:layout_gravity="end|center">
 
-                <View
-                    android:id="@+id/line_2"
-                    android:layout_width="25dp"
-                    android:layout_height="4dp"
-                    android:layout_gravity="start|bottom"
-                    android:background="@drawable/linea" />
+                    <View
+                        android:id="@+id/line_1"
+                        android:layout_width="40.5dp"
+                        android:layout_height="4dp"
+                        android:background="@drawable/linea" />
 
-            </FrameLayout>
-        </LinearLayout>
+                    <View
+                        android:id="@+id/line_2"
+                        android:layout_width="25dp"
+                        android:layout_height="4dp"
+                        android:layout_gravity="start|bottom"
+                        android:background="@drawable/linea" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Buscar"
-            android:layout_gravity="center"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/reundedsearch">
-
-            <ImageView
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_marginStart="20dp"
-                android:layout_gravity="center|start"
-                android:background="@drawable/buscar1"/>
+                </FrameLayout>
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿Cuál será tu destino?"
-                android:textSize="20sp"
-                android:layout_gravity="center"/>
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/reunded_images"
-            android:backgroundTint="@color/second">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top|center"
+                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:text="Descubre los lugares\nmas visitados de\nPopayán"
-                android:textAlignment="center"
+                android:text="Buscar"
                 android:textColor="@color/black"
-                android:textSize="32sp" />
-
+                android:textSize="32sp"
+                android:textStyle="bold" />
 
             <FrameLayout
-                android:layout_width="164dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/reundedsearch">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/buscar1" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Activa tu ubicación"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:text="¿Cuál será tu destino?"
+                    android:textSize="20sp" />
 
             </FrameLayout>
 
-        </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/reunded_images"
+                android:backgroundTint="@color/second">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Las mejores experiencias en Popayan"
-            android:textSize="24sp"
-            android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="20dp"
+                    android:text="Descubre los lugares\nmas visitados de\nPopayán"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="38dp">
 
-            <ProgressBar
-                android:id="@+id/progressBarEventos"
-                style="?android:attr/progressBarStyle"
+                <FrameLayout
+                    android:layout_width="164dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/reundedsearch">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Activa tu ubicación"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/recyclerListView"
-                app:layout_constraintEnd_toEndOf="@+id/recyclerListView"
-                app:layout_constraintStart_toStartOf="@+id/recyclerListView"
-                app:layout_constraintTop_toTopOf="@+id/recyclerListView" />
+                android:layout_marginTop="20dp"
+                android:text="Las mejores experiencias en Popayan"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerListView"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginTop="38dp">
 
-            </androidx.recyclerview.widget.RecyclerView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ProgressBar
+                    android:id="@+id/progressBarEventos"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/recyclerListView"
+                    app:layout_constraintEnd_toEndOf="@+id/recyclerListView"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerListView"
+                    app:layout_constraintTop_toTopOf="@+id/recyclerListView" />
 
-    </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:scrollbars="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -180,5 +185,4 @@
             android:background="@drawable/linea" />
 
     </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

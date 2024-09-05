@@ -5,7 +5,7 @@ class ListEventosProvider {
         val eventosList = listOf<ListEventosView>(
             ListEventosView(
                 "Parque Caldas",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Catedralpopayan.jpg/220px-Catedralpopayan.jpg",
+                "https://popayan.online/wp-content/uploads/2023/02/parque-de-calsas-2-Hugo-Alexander-Graces-1024x678.jpg",
                 "@drawable/star_cali",
                 "@drawable/star_cali",
                 "@drawable/star_cali",

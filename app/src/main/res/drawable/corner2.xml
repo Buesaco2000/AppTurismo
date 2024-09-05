@@ -1,20 +1,10 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/first"/> <!-- Usa el color que prefieras -->
+    <solid android:color="@color/first" /> <!-- Usa el color que prefieras -->
     <corners
-        android:topLeftRadius="0dp"
-<<<<<<< HEAD
-        android:bottomRightRadius="300dp"
-        android:topRightRadius="350dp"
-=======
-<<<<<<< HEAD
-        android:topRightRadius="300dp"
-        android:bottomRightRadius="300dp"
-=======
-        android:topRightRadius="350dp"
+        android:bottomLeftRadius="0dp"
         android:bottomRightRadius="350dp"
->>>>>>> 0195629540eaebff226c97c4d495fee523883b9c
->>>>>>> origin/master
-        android:bottomLeftRadius="0dp"/>
+        android:topLeftRadius="0dp"
+        android:topRightRadius="350dp" />
 </shape>
 
 
