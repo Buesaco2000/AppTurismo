@@ -17,6 +17,7 @@
         tools:layout_editor_absoluteY="0dp">
 
         <ImageButton
+            android:id="@+id/btnAtrasHistorial"
             android:layout_width="46dp"
             android:layout_height="46dp"
             android:layout_gravity="start"
@@ -110,6 +111,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -132,12 +134,13 @@
                             android:textStyle="bold" />
 
                     </LinearLayout>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end|center"
-                        android:text="0"
                         android:layout_marginEnd="15dp"
+                        android:text="0"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -170,6 +173,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -192,18 +196,17 @@
                             android:textStyle="bold" />
 
                     </LinearLayout>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end|center"
-                        android:text="0"
                         android:layout_marginEnd="15dp"
+                        android:text="0"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
                 </FrameLayout>
-
-
 
 
             </LinearLayout>
@@ -233,6 +236,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -253,12 +257,13 @@
                             android:textStyle="bold" />
 
                     </LinearLayout>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end|center"
-                        android:text="0"
                         android:layout_marginEnd="15dp"
+                        android:text="0"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -278,145 +283,6 @@
 
     </LinearLayout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom|center"
-            android:background="@color/transparent">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="86dp"
-                    android:layout_gravity="bottom|center"
-                    android:background="@color/first">
-
-                    <LinearLayout
-                        android:id="@+id/btnBuscar"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/buscar" />
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Buscar"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnMapa"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/mapa" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Mapa"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnLugares"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/lugares" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Lugares"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnPerfil"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/perfil" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Perfil"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <FrameLayout
-                    android:id="@+id/btnInicio"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="top|center"
-                    android:background="@drawable/rounded_icono"
-                    android:elevation="12dp">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/home" />
-                </FrameLayout>
-
-            </FrameLayout>
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include layout="@layout/menu_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

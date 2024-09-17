@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,8 +16,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="372dp"
-                android:layout_height="150dp"
-                android:layout_margin="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
                 android:background="@drawable/item_bg"
                 android:backgroundTint="#CCB7F8"
                 android:elevation="4dp">
@@ -37,15 +37,16 @@
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/tvName2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pueblito Patojo"
+                            android:text="Puente Humilladero"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
 
@@ -55,12 +56,14 @@
                             android:layout_marginTop="20dp">
 
                             <ImageView
+                                android:id="@+id/start"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="10dp"
                                 android:background="@drawable/star_cali" />
 
                             <TextView
+                                android:id="@+id/calificacion"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="4.5"
@@ -69,6 +72,7 @@
                         </LinearLayout>
 
                         <Button
+                            android:id="@+id/buttonV"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -80,7 +84,6 @@
 
                     </LinearLayout>
                 </LinearLayout>
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

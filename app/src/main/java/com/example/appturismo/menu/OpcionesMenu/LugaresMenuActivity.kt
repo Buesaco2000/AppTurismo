@@ -1,6 +1,7 @@
 package com.example.appturismo.menu.OpcionesMenu
 
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -9,8 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appturismo.R
 import com.example.appturismo.menu.Provider.ListExperienciaLugaresProvider
+import com.example.appturismo.menu.Provider.ListLugaresMenuViewProvider
 import com.example.appturismo.menu.Provider.ListLugaresProvider
 import com.example.appturismo.menu.adapter.ListExperienciaLugaresAdapter
+import com.example.appturismo.menu.adapter.ListLugaresMenuViewAdapter
 import com.example.appturismo.menu.adapter.ListLugaresViewAdapter
 
 class LugaresMenuActivity : AppCompatActivity() {
@@ -24,12 +27,18 @@ class LugaresMenuActivity : AppCompatActivity() {
             insets
         }
         initRecyclerView()
+
+        val btnAtras = findViewById<ImageButton>(R.id.btnAtrasLugares)
+
+        btnAtras.setOnClickListener {
+            finish()
+        }
     }
 
     private fun initRecyclerView() {
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerListView)
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerListViewLugaresMenu)
+        recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter =
-            ListLugaresViewAdapter(ListLugaresProvider.lugaresList)
+            ListLugaresMenuViewAdapter(ListLugaresMenuViewProvider.lugaresMenuList)
     }
 }

@@ -3,6 +3,7 @@ package com.example.appturismo.menu.OpcionesMenu.Perfil
 import android.content.Intent
 import android.os.Bundle
 import android.widget.FrameLayout
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,7 @@ class AyudaActivity : AppCompatActivity() {
             insets
         }
 
+        val btnAtrasAyuda = findViewById<ImageButton>(R.id.btnAtrasAyuda)
         val btnPerfil = findViewById<LinearLayout>(R.id.btnPerfil)
         val btnLugares = findViewById<LinearLayout>(R.id.btnLugares)
         val btnBuscar = findViewById<LinearLayout>(R.id.btnBuscar)
@@ -34,6 +36,10 @@ class AyudaActivity : AppCompatActivity() {
         btnMapa.setOnClickListener {
             val intent = Intent(this, MapaMenuActivity::class.java)
             startActivity(intent)
+        }
+
+        btnAtrasAyuda.setOnClickListener {
+            finish()
         }
 
         btnPerfil.setOnClickListener {

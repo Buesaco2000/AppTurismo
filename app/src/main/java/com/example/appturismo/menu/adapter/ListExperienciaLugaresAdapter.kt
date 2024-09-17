@@ -8,14 +8,11 @@ import com.example.appturismo.menu.Provider.ListExperienciasLugaresview
 
 class ListExperienciaLugaresAdapter(private val experienciaList: List<ListExperienciasLugaresview>) :
     RecyclerView.Adapter<ListExperienciaLugaresHolder>() {
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): ListExperienciaLugaresHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListExperienciaLugaresHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return ListExperienciaLugaresHolder(
             layoutInflater.inflate(
-                R.layout.item_listview,
+                R.layout.item_buscar,
                 parent,
                 false
             )

@@ -31,7 +31,6 @@ class MenuInicioActivity : AppCompatActivity() {
             insets
         }
         initRecyclerView()
-        initRecyclerView2()
 
         val btnPerfil = findViewById<LinearLayout>(R.id.btnPerfil)
         val btnLugares = findViewById<LinearLayout>(R.id.btnLugares)
@@ -61,15 +60,13 @@ class MenuInicioActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerListView)
+        val recyclerLugaresView = findViewById<RecyclerView>(R.id.recyclerListLugaresView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = ListEventosViewAdapter(ListEventosProvider.eventosList)
-    }
 
-    private fun initRecyclerView2() {
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerListLugaresView)
-        recyclerView.layoutManager =
+        recyclerLugaresView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        recyclerView.adapter =
-            ListLugaresViewAdapter(ListLugaresProvider.lugaresList)
+        recyclerLugaresView.adapter = ListLugaresViewAdapter(ListLugaresProvider.lugaresList)
+
     }
 }

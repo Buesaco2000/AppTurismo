@@ -21,13 +21,13 @@
             app:srcCompat="@drawable/gradient_image" />
 
         <ImageButton
-            android:id="@+id/btnAtras"
+            android:id="@+id/btnAtrasLugares"
             android:layout_width="46dp"
             android:layout_height="46dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/transparent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/corner_3"
+            android:backgroundTint="@color/transparent"
             android:src="@drawable/arrow_back" />
 
         <View
@@ -62,24 +62,24 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="40dp">
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="27dp">
 
             <ProgressBar
                 android:id="@+id/progressBarEventos"
                 style="?android:attr/progressBarStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="@+id/recyclerListView"
-                app:layout_constraintEnd_toEndOf="@+id/recyclerListView"
-                app:layout_constraintStart_toStartOf="@+id/recyclerListView"
-                app:layout_constraintTop_toTopOf="@+id/recyclerListView" />
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerListViewLugaresMenu"
+                app:layout_constraintEnd_toEndOf="@+id/recyclerListViewLugaresMenu"
+                app:layout_constraintStart_toStartOf="@+id/recyclerListViewLugaresMenu"
+                app:layout_constraintTop_toTopOf="@+id/recyclerListViewLugaresMenu" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerListView"
+                android:id="@+id/recyclerListViewLugaresMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="27dp"
-                android:layout_marginEnd="27dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -96,9 +96,9 @@
         android:layout_marginBottom="60dp"
         android:backgroundTint="@color/first"
         android:drawableLeft="@drawable/mapa"
+        android:elevation="12dp"
         android:text="Abrir Mapa"
         android:textColor="@color/black"
-        android:elevation="12dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -17,38 +17,39 @@
         tools:layout_editor_absoluteY="0dp">
 
         <ImageButton
+            android:id="@+id/btnAtrasSeguridad"
             android:layout_width="46dp"
             android:layout_height="46dp"
-            android:layout_marginTop="50dp"
-            android:backgroundTint="@color/transparent"
             android:layout_gravity="start"
+            android:layout_marginTop="50dp"
             android:background="@drawable/corner_3"
+            android:backgroundTint="@color/transparent"
             android:src="@drawable/arrow_back" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:text="Seguridad y protección"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold" />
-        
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_gravity="center"
+            android:layout_marginTop="50dp"
             android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:backgroundTint="#BDD8FA"
-                android:background="@drawable/corner_3">
+                android:background="@drawable/corner_3"
+                android:backgroundTint="#BDD8FA">
 
                 <ImageButton
                     android:id="@+id/logo"
@@ -69,8 +70,7 @@
                 android:text="¿Con quién desea\nponerse en contacto?"
                 android:textColor="@color/black"
                 android:textSize="25sp"
-                android:textStyle="bold"/>
-
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -80,8 +80,8 @@
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="110dp"
-            android:elevation="12dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:elevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/agregar"/>
+                    android:background="@drawable/agregar" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -102,8 +102,8 @@
                     android:layout_gravity="center"
                     android:text="Agregar contacto"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -120,8 +120,8 @@
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="27dp"
-            android:elevation="12dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:elevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/ambulancia"/>
+                    android:background="@drawable/ambulancia" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -142,8 +142,8 @@
                     android:layout_gravity="center"
                     android:text="Ambulancia"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -160,8 +160,8 @@
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="27dp"
-            android:elevation="12dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:elevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -174,16 +174,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/policia"/>
+                    android:background="@drawable/policia" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Policía"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -200,8 +200,8 @@
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="27dp"
-            android:elevation="12dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:elevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -214,16 +214,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/bomberos"/>
+                    android:background="@drawable/bomberos" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Bomberos"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -238,145 +238,6 @@
 
     </LinearLayout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom|center"
-            android:background="@color/transparent">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="86dp"
-                    android:layout_gravity="bottom|center"
-                    android:background="@color/first">
-
-                    <LinearLayout
-                        android:id="@+id/btnBuscar"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/buscar" />
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Buscar"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnMapa"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/mapa" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Mapa"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnLugares"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/lugares" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Lugares"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnPerfil"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/perfil" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Perfil"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <FrameLayout
-                    android:id="@+id/btnInicio"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="top|center"
-                    android:background="@drawable/rounded_icono"
-                    android:elevation="12dp">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/home" />
-                </FrameLayout>
-
-            </FrameLayout>
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include layout="@layout/menu_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

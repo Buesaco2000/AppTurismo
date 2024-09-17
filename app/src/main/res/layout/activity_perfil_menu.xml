@@ -23,6 +23,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/btnAtrasCuenta"
                 android:layout_width="46dp"
                 android:layout_height="46dp"
                 android:layout_gravity="start|center"
@@ -108,7 +109,7 @@
         </LinearLayout>
 
         <FrameLayout
-            android:id="@+id/btnHistorial"
+            android:id="@+id/btnHistorialCuenta"
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="55dp"
@@ -147,7 +148,7 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/btnAccesibilidad"
+            android:id="@+id/btnAccesibilidadCuenta"
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
@@ -186,7 +187,7 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/btnSeguridad"
+            android:id="@+id/btnSeguridadCuenta"
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
@@ -225,7 +226,7 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/btnConfiguracion"
+            android:id="@+id/btnConfiguracionCuenta"
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
@@ -264,7 +265,7 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/btnAyuda"
+            android:id="@+id/btnAyudaCuenta"
             android:layout_width="369dp"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
@@ -316,145 +317,6 @@
 
     </LinearLayout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="128dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom|center"
-            android:background="@color/transparent">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="86dp"
-                    android:layout_gravity="bottom|center"
-                    android:background="@color/first">
-
-                    <LinearLayout
-                        android:id="@+id/btnBuscar"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/buscar" />
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Buscar"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnMapa"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/mapa" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Mapa"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnLugares"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/lugares" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Lugares"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/btnPerfil"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="46dp"
-                            android:layout_height="46dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/perfil" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Perfil"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="18sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <FrameLayout
-                    android:id="@+id/btnInicio"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_gravity="top|center"
-                    android:background="@drawable/rounded_icono"
-                    android:elevation="12dp">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/home" />
-                </FrameLayout>
-
-            </FrameLayout>
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include layout="@layout/menu_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
