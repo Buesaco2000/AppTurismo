@@ -102,6 +102,7 @@
             app:layout_constraintTop_toBottomOf="@id/email_title">
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableEnd="@drawable/gmail"
@@ -131,6 +132,7 @@
             app:layout_constraintTop_toBottomOf="@id/password_title">
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableEnd="@drawable/password"

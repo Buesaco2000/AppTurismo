@@ -6,6 +6,9 @@
     <string name="politica_text">
     Al crear una cuenta aceptas nuestras <u><font color="#6C00FD">Políticas y Privacidad</font></u>
     </string>
+    <string name="facebook_app_id">239653688967921</string>
+    <string name="fb_login_protocol_scheme">fb239653688967921</string>
+    <string name="facebook_client_token">c0f8977730be4821c2f81e9b698a21c2</string>
 </resources>
 
 

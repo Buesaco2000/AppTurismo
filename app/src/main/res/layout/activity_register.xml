@@ -57,7 +57,7 @@
             android:id="@+id/name_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre Y Apellido"
+            android:text="Nombre"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,6 +72,7 @@
             app:layout_constraintTop_toBottomOf="@id/name_title">
 
             <EditText
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableEnd="@drawable/name"
@@ -89,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="9dp"
-            android:text="Usuario"
+            android:text="Apellido"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -104,6 +105,7 @@
             app:layout_constraintTop_toBottomOf="@id/usuario_title">
 
             <EditText
+                android:id="@+id/apellido"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableEnd="@drawable/user"
@@ -133,6 +135,7 @@
             app:layout_constraintTop_toBottomOf="@id/email_title">
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableEnd="@drawable/gmail"
@@ -163,6 +166,7 @@
             app:layout_constraintTop_toBottomOf="@id/password_title">
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableEnd="@drawable/password"
